@@ -1,0 +1,160 @@
+[
+  {
+    "id": "gorillas-red-cabbage",
+    "title": "Gorillas Rotkohl",
+    "type": ["Art Direction"],
+    "description": [
+      "Grocery delivery services are booming and they all only talk about one thing: speed. With a different approach, a very slow one, Gorillas serves up an arthouse short film called Red Cabbage on YouTube that is about as long as the Gorillas delivery time: 8 minutes."
+    ],
+    "description2": "Red Cabbage tells the story of Rod Kohl, who gets forgotten on a night bus and meets all sorts of strangers. He takes the audience into a cosmos that is very popular with the young target group and in which time doesn't matter: the Berlin night.",
+    "team": [
+      "ECD: Johannes Hicks",
+      "Creative Lead: Lia Hermann",
+      "Creative Lead: Anne Marie Longtine",
+      "Creative: Junggle Kim",
+      "Creative: Tobin Hecker",
+      "Creative: Ghada Bennasr",
+      "Motion Designer: Aaron McCammon",
+      "Project Director:Anne Kammeier",
+      "Sound Design: Kraatz Studio"
+    ],
+    "agency": "Mediamonks",
+    "client": "Gorillas Delivery",
+    "awards": [
+      "Ciclope - Bronze",
+      "ADC Global - SL",
+      "ADC - 1x Bronze, 1x SL",
+      "ADC Junior - Silver (Ghada Bennasr)",
+      "Ad Age - Editor's Pick",
+      "W&V - Top der Woche",
+      "Adforum"
+    ],
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/rotkohl_cover.png"
+      }
+    ],
+
+    "caseVideo": "https://www.dropbox.com/scl/fi/x9kl7xwmyu7qmq1xo8rmo/gorillas_rotkohl.mp4?rlkey=69sjj0l52zkil3fsd7gz63oqq&st=0zd8cnla&raw=1",
+
+    "videoPortrait": [
+      "https://www.dropbox.com/scl/fi/8rgx99dts7tv37kiozg0z/Gorillas_EOY_ROTKOHL_Film3_RATATOUILLE_15s_9x16.mp4?rlkey=is04s3b4ml1svwyl8gqha59n7&st=myt7ry0x&raw=1",
+      "https://www.dropbox.com/scl/fi/vxplvef684p8aq60oxqpb/2022_gorillas_rotkohl_casting_rotkohl_15s_9x16_deu-1080p.mp4?rlkey=7yvbb1fz4s3vxhpvta8hcoouk&st=9dgt13qg&raw=1",
+      "https://www.dropbox.com/scl/fi/4uv4j12uuh6w5femoa8zh/Gorillas_EOY_ROTKOHL_Film1_Xmas_15s_R2.mp4?rlkey=v2x23jgahfoeqjb6cy6bgd4d0&st=h6z8sfxg&raw=1"
+    ]
+  },
+  {
+    "id": "bmw",
+    "title": "BMW Active tourer 2",
+    "type": ["Art Direction"],
+    "agency": "Mediamonks Global, Mediamonks France",
+    "description": [
+      "Our campaign for the 2 Series Active Tourer is a testament to adaptability, mirroring the versatility of life itself. With a plug-and-play production approach, we created a multitude of adaptations, each tailored to different markets, target audiences, and customer journey stages.",
+      "Despite it being a product launch campaign, we didn’t focus only on technical features but on what they can do for you. With many small stories, all coming from A TOUR CALLED LIFE."
+    ],
+    "client": "BMW",
+    "team": [
+      "ECD: Marc Isken",
+      "Sr Creative: Ole Nagatis",
+      "Sr Creative: Dennis Engel",
+      "AD: Ghada Bennasr",
+      "AD: Rachel Fleisher",
+      "CW: Smriti Rana"
+    ],
+    "coverProject": [],
+    "board01": [
+      { "type": "image", "src": "/bmw_cover.png" },
+      { "type": "video", "src": "/bmw_at2_board01.mp4" },
+      { "type": "video", "src": "/bmw_at_board02.mp4" }
+    ]
+  },
+
+  {
+    "id": "adidas",
+    "title": "Adidas SS20 Uniforia",
+    "type": ["Graphic Design"],
+    "description": [
+      "The Adidas Uniforia Pack SS20 project developed a visual language inspired by the principles of arts and crafts. The collection’s unique design elements featured handcrafted paint strokes, digitized through a blend of analogue and digital techniques, reflecting the raw, imperfect beauty found in both sports and art",
+      "The retail concept was transformed into a flexible global toolkit catering different global market realities. From small scale to flagship executions."
+    ],
+    "agency": " Attitude Studio Design",
+    "client": "Adidas Football",
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/adidas_uniforia_pack.jpg"
+      }
+    ],
+    "demoVideo": ["/adidas_video.mp4"],
+    "board01": ["/adidas_01.png"],
+    "board02": ["/adidas_02.png"]
+  },
+  {
+    "id": "gorillas-eoy",
+    "title": "Gorillas EOY",
+    "type": ["Graphic Design", "Art Direction"],
+    "description": [
+      "Winter 2021, grocery delivery in minutes became the new thing. And since everyone had the same exact focus, Gorillas needed to stand out by focusing on something else: empathy. This story was told across all channels and touch points. Using real human insights, that spoke to all of our target groups, no matter where they were celebrating the holidays."
+    ],
+    "team": [
+      "ECD: Johannes Hicks",
+      "Sr Creative: Annemarie Longtine",
+      "AD: Ghada Bennasr",
+      "CW: Kevin Chow"
+    ],
+    "agency": "Mediamonks",
+    "client": "Gorillas Delivery",
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/gorillas_eoy_cover.png"
+      }
+    ],
+    "caseVideo": ["/gorillas_eoy_ad.mp4"],
+    "board01": ["/gorillas_eoy_1.png"]
+  },
+
+  {
+    "id": "5",
+    "title": "Tinder",
+    "type": ["Student Work", "Graphic Design", "Art Direction"],
+    "role": "Role: Concept, Artwork",
+    "team": [
+      "AD: Leonardo Bordovsky",
+      "AD: Ghada Bennasr",
+      "CW: Stephan Körner"
+    ],
+    "description": [
+      "The idea of finding \"the one\" is a socially romanticized view of relationships. Tinder aims to shift this perspective by suggesting that there isn't just one perfect match for each of us; instead, anyone could be \"the one\" — whether they are the funny one, the attractive one, or the intelligent one.",
+      "To illustrate this, we imagined a Waldo puzzle made entirely of Waldos, symbolizing how effortlessly you can find not just one, but many perfect matches."
+    ],
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/tinder_1.jpg"
+      }
+    ],
+
+    "board01": ["/tinder_2.jpg"],
+    "demoVideo": ["/tinder_animation.mp4"]
+  },
+  {
+    "id": "bundesliga",
+    "title": "Bundesliga",
+    "type": ["Graphic Design", "Art Direction"],
+    "description": [
+      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
+    ],
+    "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
+    "agency": "Agency: Mediamonks",
+    "client": "Client: Gorillas Delivery",
+    "coverProject": [
+      {
+        "type": "image",
+        "src": "/bundesliga_01.png"
+      }
+    ],
+    "board01": ["/bundesliga_02.png"]
+  }
+]
