@@ -7,14 +7,20 @@ const Header = () => {
 
   useEffect(() => {
     axios
-      .get("/src/assets/projectsData.json") // Adjust the path if needed
+      .get("/src/assets/projectsData.json")
       .then((response) => setProjects(response.data))
       .catch((error) => console.error("Error fetching project data:", error));
   }, []);
 
+  const getTranslateY = (title) => {
+    if (title === "About") return "-translate-y-40";
+    if (title.length <= 6) return "-translate-y-10"; // Short titles move up
+    if (title.length <= 8) return "-translate-y-20"; // Medium titles move slightly up
+    return "translate-y-7"; // Long titles stay centered
+  };
+
   return (
-    <div className="header h-screen w-full overflow-hidden">
-      {/* Dynamic Projects Grid */}
+    <div className="header absolute bottom-0 h-[80vh] w-full overflow-hidden px-6 pb-4">
       <div
         className="h-full w-full grid"
         style={{
@@ -26,32 +32,18 @@ const Header = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border-r-2 border-black flex items-center justify-center h-full"
+            className="border-r border-black first:border-l flex items-center justify-center h-full"
           >
             <Link
               to={`/projects/${project.id}`}
-              className="text-black text-4xl font-bold transform -rotate-90 whitespace-nowrap"
+              className={`font-voyage font-400 text-custom transform -rotate-90 whitespace-nowrap ${getTranslateY(
+                project.title
+              )}`}
             >
               {project.title}
             </Link>
           </div>
         ))}
-      </div>
-
-      {/* Static Grid for Debugging */}
-      <div className="grid grid-cols-2 grid-rows-2 h-screen w-full">
-        <div className="border border-black flex items-center justify-center">
-          Cell 1
-        </div>
-        <div className="border border-black flex items-center justify-center">
-          Cell 2
-        </div>
-        <div className="border border-black flex items-center justify-center">
-          Cell 3
-        </div>
-        <div className="border border-black flex items-center justify-center">
-          Cell 4
-        </div>
       </div>
     </div>
   );
