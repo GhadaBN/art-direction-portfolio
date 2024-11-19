@@ -13,14 +13,14 @@ const Header = () => {
   }, []);
 
   const getTranslateY = (title) => {
-    if (title === "About") return "-translate-y-40";
+    if (title === "About") return "-translate-y-60";
     if (title.length <= 6) return "-translate-y-10"; // Short titles move up
     if (title.length <= 8) return "-translate-y-20"; // Medium titles move slightly up
-    return "translate-y-7"; // Long titles stay centered
+    return "translate-y-4"; // Long titles stay centered
   };
 
   return (
-    <div className="header absolute bottom-0 h-[80vh] w-full overflow-hidden px-6 pb-4">
+    <div className="header absolute bottom-0 h-[84vh] w-full overflow-hidden px-6 pb-4">
       <div
         className="h-full w-full grid"
         style={{
