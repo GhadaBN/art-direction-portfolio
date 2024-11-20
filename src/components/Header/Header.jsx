@@ -11,12 +11,12 @@ const Header = () => {
       .then((response) => setProjects(response.data))
       .catch((error) => console.error("Error fetching project data:", error));
   }, []);
-
-  const getTranslateY = (title) => {
-    if (title === "About") return "-translate-y-60";
-    if (title.length <= 6) return "-translate-y-10"; // Short titles move up
-    if (title.length <= 8) return "-translate-y-20"; // Medium titles move slightly up
-    return "translate-y-4"; // Long titles stay centered
+  const getPositionStyles = (title) => {
+    if (title === "About") return { marginBottom: "24rem" };
+    if (title === "Gorillas eoy") return { marginBottom: "7rem" };
+    if (title === "Tinder") return { marginBottom: "10rem" };
+    if (title === "Bundesliga") return { marginBottom: "-9rem" };
+    return {};
   };
 
   return (
@@ -36,11 +36,21 @@ const Header = () => {
           >
             <Link
               to={`/projects/${project.id}`}
-              className={`font-voyage font-400 text-custom transform -rotate-90 whitespace-nowrap ${getTranslateY(
-                project.title
-              )}`}
+              className={`font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap`}
+              style={getPositionStyles(project.title)}
             >
-              {project.title}
+              <div className="flex items-start">
+                <span>{project.title}</span>
+
+                {project.number && (
+                  <span
+                    className="text-customSm ml-4 align-text-top"
+                    style={{ verticalAlign: "top", marginTop: "2rem" }}
+                  >
+                    {project.number}
+                  </span>
+                )}
+              </div>
             </Link>
           </div>
         ))}
@@ -48,5 +58,4 @@ const Header = () => {
     </div>
   );
 };
-
 export default Header;
