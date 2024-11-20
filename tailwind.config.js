@@ -12,7 +12,12 @@ export default {
         lg: "1.125rem",
         xl: "1.25rem",
         "2xl": "1.5rem",
-        custom: "6.5vw",
+        customLg: "6.5vw",
+        customSm: "1.2vw",
+      },
+      colors: {
+        greenCustom: "#008846",
+        blueCustom: "#086bff",
       },
     },
   },
