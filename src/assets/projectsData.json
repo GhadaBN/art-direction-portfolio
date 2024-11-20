@@ -29,20 +29,6 @@
       "Ad Age - Editor's Pick",
       "W&V - Top der Woche",
       "Adforum"
-    ],
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/rotkohl_cover.png"
-      }
-    ],
-
-    "caseVideo": "https://www.dropbox.com/scl/fi/x9kl7xwmyu7qmq1xo8rmo/gorillas_rotkohl.mp4?rlkey=69sjj0l52zkil3fsd7gz63oqq&st=0zd8cnla&raw=1",
-
-    "videoPortrait": [
-      "https://www.dropbox.com/scl/fi/8rgx99dts7tv37kiozg0z/Gorillas_EOY_ROTKOHL_Film3_RATATOUILLE_15s_9x16.mp4?rlkey=is04s3b4ml1svwyl8gqha59n7&st=myt7ry0x&raw=1",
-      "https://www.dropbox.com/scl/fi/vxplvef684p8aq60oxqpb/2022_gorillas_rotkohl_casting_rotkohl_15s_9x16_deu-1080p.mp4?rlkey=7yvbb1fz4s3vxhpvta8hcoouk&st=9dgt13qg&raw=1",
-      "https://www.dropbox.com/scl/fi/4uv4j12uuh6w5femoa8zh/Gorillas_EOY_ROTKOHL_Film1_Xmas_15s_R2.mp4?rlkey=v2x23jgahfoeqjb6cy6bgd4d0&st=h6z8sfxg&raw=1"
     ]
   },
   {
@@ -63,12 +49,6 @@
       "AD: Ghada Bennasr",
       "AD: Rachel Fleisher",
       "CW: Smriti Rana"
-    ],
-    "coverProject": [],
-    "board01": [
-      { "type": "image", "src": "/bmw_cover.png" },
-      { "type": "video", "src": "/bmw_at2_board01.mp4" },
-      { "type": "video", "src": "/bmw_at_board02.mp4" }
     ]
   },
 
@@ -82,16 +62,7 @@
       "The retail concept was transformed into a flexible global toolkit catering different global market realities. From small scale to flagship executions."
     ],
     "agency": " Attitude Studio Design",
-    "client": "Adidas Football",
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/adidas_uniforia_pack.jpg"
-      }
-    ],
-    "demoVideo": ["/adidas_video.mp4"],
-    "board01": ["/adidas_01.png"],
-    "board02": ["/adidas_02.png"]
+    "client": "Adidas Football"
   },
   {
     "id": "gorillas-eoy",
@@ -108,15 +79,7 @@
       "CW: Kevin Chow"
     ],
     "agency": "Mediamonks",
-    "client": "Gorillas Delivery",
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/gorillas_eoy_cover.png"
-      }
-    ],
-    "caseVideo": ["/gorillas_eoy_ad.mp4"],
-    "board01": ["/gorillas_eoy_1.png"]
+    "client": "Gorillas Delivery"
   },
 
   {
@@ -133,16 +96,7 @@
     "description": [
       "The idea of finding \"the one\" is a socially romanticized view of relationships. Tinder aims to shift this perspective by suggesting that there isn't just one perfect match for each of us; instead, anyone could be \"the one\" — whether they are the funny one, the attractive one, or the intelligent one.",
       "To illustrate this, we imagined a Waldo puzzle made entirely of Waldos, symbolizing how effortlessly you can find not just one, but many perfect matches."
-    ],
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/tinder_1.jpg"
-      }
-    ],
-
-    "board01": ["/tinder_2.jpg"],
-    "demoVideo": ["/tinder_animation.mp4"]
+    ]
   },
   {
     "id": "bundesliga",
@@ -154,31 +108,16 @@
     ],
     "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
     "agency": "Agency: Mediamonks",
-    "client": "Client: Gorillas Delivery",
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/bundesliga_01.png"
-      }
-    ],
-    "board01": ["/bundesliga_02.png"]
+    "client": "Client: Gorillas Delivery"
   },
   {
     "id": "about",
     "title": "About",
+    "number": "07",
     "type": ["Graphic Design", "Art Direction"],
-    "description": [
-      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
-    ],
+    "description": ["This is the about page."],
     "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
     "agency": "Agency: Mediamonks",
-    "client": "Client: Gorillas Delivery",
-    "coverProject": [
-      {
-        "type": "image",
-        "src": "/bundesliga_01.png"
-      }
-    ],
-    "board01": ["/bundesliga_02.png"]
+    "client": "Client: Gorillas Delivery"
   }
 ]
