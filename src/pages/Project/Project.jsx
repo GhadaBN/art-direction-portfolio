@@ -12,7 +12,8 @@ const Project = () => {
   }
 
   return (
-    <div className="project-page h-screen flex items-center justify-center">
+    <div className="project-page h-screen flex items-center justify-center pt-[15vh]">
+      <div className="navbar-spacer h-[15vh]"></div>
       <HeaderProject
         title={project.title}
         type={project.type}
