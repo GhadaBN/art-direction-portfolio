@@ -19,6 +19,7 @@ export default {
         customSm: "1.2vw",
       },
       colors: {
+        customBg: "#f1f0ea",
         greenCustom: "#008846",
         blueCustom: "#086bff",
       },
