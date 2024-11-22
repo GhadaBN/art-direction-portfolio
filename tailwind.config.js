@@ -13,12 +13,21 @@ export default {
         xl: "1.25rem",
         "2xl": "1.5rem",
         customLg: "6.5vw",
-        customH1: "12vw",
+        customH1: "14vw",
         customSm: "1.2vw",
       },
       colors: {
         greenCustom: "#008846",
         blueCustom: "#086bff",
+      },
+      keyframes: {
+        growBorder: {
+          "0%": { height: "0%" },
+          "100%": { height: "100%" },
+        },
+      },
+      animation: {
+        growBorder: "growBorder 0.5s ease-out forwards",
       },
     },
   },
