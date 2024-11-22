@@ -114,7 +114,7 @@
     "id": "about",
     "title": "About",
     "number": "07",
-    "type": ["Graphic Design", "Art Direction"],
+    "type": [""],
     "description": ["This is the about page."],
     "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
     "agency": "Agency: Mediamonks",
