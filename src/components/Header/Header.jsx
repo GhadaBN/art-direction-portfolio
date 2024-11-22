@@ -43,16 +43,17 @@ const Header = () => {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="border-r border-black first:border-l flex items-center justify-center h-full"
+            className="relative flex items-center justify-center h-full"
           >
+            <div className="absolute bottom-0 left-0 w-full border-black border-r h-0 origin-bottom animate-growBorder"></div>
+
             <Link
               to={`/projects/${project.id}`}
-              className={`font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap`}
+              className="font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap opacity-0 animate-fadeInFromLeft"
               style={getPositionStyles(project.title)}
             >
               <div className="flex items-start">
                 <span>{project.title}</span>
-
                 {project.number && (
                   <span
                     className="text-customSm ml-2 align-text-top"
@@ -69,16 +70,17 @@ const Header = () => {
         {about && (
           <div
             key="about"
-            className="border-r border-black first:border-l flex items-center justify-center h-full"
+            className="relative flex items-center justify-center h-full"
           >
+            <div className="absolute bottom-0 left-0 w-full border-black border-r h-0 origin-bottom animate-growBorder"></div>
+
             <Link
               to="/about"
-              className={`font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap`}
+              className="font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap opacity-0 animate-fadeInFromLeft"
               style={getPositionStyles(about.title)}
             >
               <div className="flex items-start">
                 <span>{about.title}</span>
-
                 {about.number && (
                   <span
                     className="text-customSm ml-2 align-text-top"

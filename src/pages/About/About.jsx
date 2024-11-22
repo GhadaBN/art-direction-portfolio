@@ -9,8 +9,8 @@ const About = () => {
         </h1>
         <div className="w-[90%] flex justify-end mt-6">
           <p
-            className="font-pangram font-normal leading-snug text-xl py-12 px-6"
-            style={{ width: "40vw" }}
+            className="font-pangram font-normal leading-snug text-lg py-16 pl-2"
+            style={{ width: "38vw" }}
           >
             I’m a multidisciplinary creative with a strong foundation in Art
             Direction and graphic design, enriched by diverse experiences across
