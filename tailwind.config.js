@@ -13,6 +13,7 @@ export default {
         xl: "1.25rem",
         "2xl": "1.5rem",
         customLg: "6.5vw",
+        customH1: "12vw",
         customSm: "1.2vw",
       },
       colors: {
