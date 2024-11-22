@@ -15,6 +15,7 @@ export default {
         "2xl": "1.5rem",
         customLg: "6.5vw",
         customH1: "14rem",
+        customH2: "15rem",
         customP: "1rem",
         customSm: "1.2vw",
       },
