@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        voyage: ["voyage", "sans-serif"],
+        voyage: ["voyage", "serif"],
+        pangram: ["pangram", "sans-serif"],
       },
       fontSize: {
         sm: "0.875rem",
@@ -13,7 +14,8 @@ export default {
         xl: "1.25rem",
         "2xl": "1.5rem",
         customLg: "6.5vw",
-        customH1: "14vw",
+        customH1: "14rem",
+        customP: "1rem",
         customSm: "1.2vw",
       },
       colors: {

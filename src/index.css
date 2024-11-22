@@ -14,6 +14,25 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: "pangram";
+  src: url("../src/assets/Pangram-Light.otf") format("otf");
+  font-weight: light;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pangram";
+  src: url("../src/assets/voyage-regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pangram";
+  src: url("../src/assets/Pangram-Medium.otf") format("otf");
+  font-weight: medium;
+  font-style: normal;
+}
 
 /* ====== Root Variables ====== */
 :root {

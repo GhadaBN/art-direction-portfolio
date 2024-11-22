@@ -9,15 +9,17 @@ const About = () => {
         </h1>
         <div className="w-[90%] flex justify-end mt-6">
           <p
-            className="font-voyage font-normal leading-normal py-16 px-6"
-            style={{ width: "35vw" }}
+            className="font-pangram font-normal leading-snug text-xl py-12 px-6"
+            style={{ width: "40vw" }}
           >
             I’m a multidisciplinary creative with a strong foundation in Art
             Direction and graphic design, enriched by diverse experiences across
             agencies, design studios, and in-house teams. I’ve worked on a wide
-            range of projects—from social media campaigns to branding
+            range of projects from social media campaigns to branding
             initiatives for renowned brands like Adidas, BMW, YouTube, and
-            Gorillas Delivery.
+            Gorillas Delivery. Originally from Tunisia and now based in Berlin,
+            my work is shaped by a blend of cultural influences and a fresh,
+            adaptable approach to design and storytelling.
           </p>
         </div>
       </div>
