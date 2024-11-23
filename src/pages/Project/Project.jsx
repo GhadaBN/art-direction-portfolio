@@ -4,6 +4,9 @@ import projectsData from "../../assets/projectsData.json";
 import HeaderProject from "../../components/HeaderProject/HeaderProject";
 import CoverProject from "../../components/CoverProject/CoverProject";
 import Boards from "../../components/Boards/Boards";
+import CaseVideo from "../../components/CaseVideo/CaseVideo";
+import DemoVideo from "../../components/DemoVideo/DemoVideo";
+import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
 const Project = () => {
   const { projectId } = useParams();
   const project = projectsData.find((p) => p.id === projectId);
@@ -26,7 +29,12 @@ const Project = () => {
       {project.coverProject && (
         <CoverProject coverProject={project.coverProject} />
       )}
+      {project.caseVideo && <CaseVideo caseVideo={project.caseVideo} />}
+      {project.videoPortrait && (
+        <VideoPortrait videoPortrait={project.videoPortrait} />
+      )}
       {project.boards && <Boards boards={project.boards} />}
+      {project.demoVideo && <DemoVideo demoVideo={project.demoVideo} />}
     </div>
   );
 };

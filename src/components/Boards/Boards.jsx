@@ -3,11 +3,16 @@ import ReactPlayer from "react-player";
 
 const Boards = ({ boards }) => {
   return (
-    <div className="boards-wrapper">
+    <div className="boards-wrapper items-center w-full mx-auto">
       {boards?.map((board, index) => (
         <div key={index} className="board-item">
           {board.type === "image" ? (
-            <img src={board.src} alt={`Board ${index + 1}`} className="board" />
+            <img
+              src={board.src}
+              alt={`Board ${index + 1}`}
+              className="board w-full h-auto block object-contain
+"
+            />
           ) : board.type === "video" ? (
             <ReactPlayer
               url={board.src}
