@@ -10,7 +10,7 @@ const HeaderProject = ({
   team,
 }) => {
   return (
-    <div className="header-project w-full px-6 pt-[2vh] h-[80vh]">
+    <div className="header-project w-full px-6 pb-[5vh] min-h-[80vh]">
       {type && (
         <div className="flex justify-start pb-6 px-4">
           <div className="flex gap-4">
@@ -29,22 +29,21 @@ const HeaderProject = ({
 
       {title && (
         <div className="w-full flex justify-center">
-          <h1 className="font-voyage font-normal text-center leading-none text-customH2 pb-20">
+          <h1 className="font-voyage font-normal text-center leading-none text-customH2 py-10">
             {title}
           </h1>
         </div>
       )}
 
-      <div className="flex w-full px-10 pt-12">
+      <div className="flex w-full pr-32 pt-16">
         {description && (
           <div className="w-[40vw] ml-auto">
-            {/* Line above Project Information */}
             <div
               className="mb-6 h-[1px] bg-black w-[41vw]"
               style={{ marginLeft: "-1vw" }}
             ></div>
 
-            <h3 className="font-pangram font-medium leading-snug text-lg pt-1">
+            <h3 className="font-pangram font-medium leading-snug text-lg pt-1 mt-8">
               Project Information
             </h3>
             {description.map((desc, index) => (
@@ -58,8 +57,8 @@ const HeaderProject = ({
 
             {/* Line below Project Information */}
             <div
-              className="mt-6 h-[1px] bg-black w-[42vw]"
-              style={{ marginLeft: "-2vw" }}
+              className="mt-6 h-[1px] bg-black w-[41vw]"
+              style={{ marginLeft: "-1vw" }}
             ></div>
 
             {/* Flexed Wrapper for Additional Details */}
