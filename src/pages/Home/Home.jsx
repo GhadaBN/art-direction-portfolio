@@ -3,7 +3,7 @@ import Header from "../../components/Header/Header";
 
 const Home = () => {
   return (
-    <div className="home relative h-screen w-full">
+    <div className="home relative h-[84vh] w-full">
       <Header />
     </div>
   );

@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header absolute bottom-0 h-[82vh] w-full px-6 pb-4">
+    <div className="header absolute bottom-0 h-[80vh] w-full px-6 pb-4">
       <div
         className="h-full w-full grid"
         style={{
