@@ -33,8 +33,8 @@ const Project = () => {
       {project.videoPortrait && (
         <VideoPortrait videoPortrait={project.videoPortrait} />
       )}
-      {project.boards && <Boards boards={project.boards} />}
       {project.demoVideo && <DemoVideo demoVideo={project.demoVideo} />}
+      {project.boards && <Boards boards={project.boards} />}
     </div>
   );
 };
