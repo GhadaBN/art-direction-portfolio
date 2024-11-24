@@ -17,7 +17,7 @@ const HeaderProject = ({
             {type.map((tag, index) => (
               <div
                 key={index}
-                className="font-pangram font-normal leading-snug text-lg px-12 py-1 text-black
+                className="font-pangram font-normal leading-snug text-xl px-12 py-0.5 text-black
                 rounded-full shadow-[-4px_4px_0px_0px_black] border border-black"
               >
                 {tag}

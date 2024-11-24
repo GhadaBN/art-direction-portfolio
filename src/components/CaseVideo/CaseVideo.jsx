@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ReactPlayer from "react-player";
 import { IoIosPlay } from "react-icons/io";
-import "./CaseVideo.css";
 
 const CaseVideo = ({ caseVideo }) => {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -16,9 +15,9 @@ const CaseVideo = ({ caseVideo }) => {
   };
 
   return (
-    <div className="section">
+    <div className="w-full h-auto flex justify-center items-center my-4">
       <div
-        className="video-wrapper"
+        className="relative w-4/5 h-full aspect-video rounded-md overflow-hidden"
         onMouseEnter={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}
       >
@@ -38,11 +37,14 @@ const CaseVideo = ({ caseVideo }) => {
               },
             },
           }}
-          className="minimalist-player"
+          className="w-full h-full object-cover transition-opacity duration-300 ease-in-out"
         />
         {!isPlaying && (
-          <div className="play-button-overlay" onClick={handlePlay}>
-            <IoIosPlay className="play-icon" />
+          <div
+            className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 cursor-pointer"
+            onClick={handlePlay}
+          >
+            <IoIosPlay className="text-gray-200 text-[3.5rem]" />
           </div>
         )}
       </div>
