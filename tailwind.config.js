@@ -33,10 +33,15 @@ export default {
           "0%": { opacity: "0", transform: "translateX(-50px) rotate(-90deg)" },
           "100%": { opacity: "1", transform: "translateX(0) rotate(-90deg)" },
         },
+        spin: {
+          from: { transform: "rotate(0deg)" },
+          to: { transform: "rotate(360deg)" },
+        },
       },
       animation: {
         growBorder: "growBorder 1s ease-out forwards",
         fadeInFromLeft: "fadeInFromLeft 1.5s ease-out forwards",
+        spin: "spin 7s linear infinite",
       },
     },
   },
