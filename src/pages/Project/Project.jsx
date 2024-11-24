@@ -16,7 +16,7 @@ const Project = () => {
   }
 
   return (
-    <div className="project-page h-screen  pt-[5vh]">
+    <div className="project-page h-screen">
       <HeaderProject
         title={project.title}
         type={project.type}
