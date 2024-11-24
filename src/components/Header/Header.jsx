@@ -45,7 +45,12 @@ const Header = () => {
             key={index}
             className="relative flex items-center justify-center h-full"
           >
-            <div className="absolute bottom-0 left-0 w-full border-black border-r h-0 origin-bottom animate-growBorder"></div>
+            {/* Ensure first column has both border-l and border-r */}
+            <div
+              className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
+                index === 0 ? "border-l border-r" : "border-r"
+              }`}
+            ></div>
 
             <Link
               to={`/projects/${project.id}`}
@@ -72,7 +77,12 @@ const Header = () => {
             key="about"
             className="relative flex items-center justify-center h-full"
           >
-            <div className="absolute bottom-0 left-0 w-full border-black border-r h-0 origin-bottom animate-growBorder"></div>
+            {/* Ensure about section has consistent borders */}
+            <div
+              className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
+                projects.length === 0 ? "border-l border-r" : "border-r"
+              }`}
+            ></div>
 
             <Link
               to="/about"
