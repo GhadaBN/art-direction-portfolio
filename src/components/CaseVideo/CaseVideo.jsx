@@ -8,10 +8,10 @@ const CaseVideo = ({ caseVideo }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsPlaying(entry.isIntersecting); 
+        setIsPlaying(entry.isIntersecting);
       },
       {
-        threshold: 0.5, 
+        threshold: 0.5,
       }
     );
 

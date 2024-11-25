@@ -18,12 +18,12 @@ const VideoPortrait = ({ videoPortrait }) => {
   };
 
   return (
-    <div className="w-full h-[84vh] relative">
-      <div className="flex py-20 gap-12 justify-center items-center">
+    <div className="w-[92vw] min-h-screen bg-black flex justify-center items-center py-12 mx-auto">
+      <div className="flex gap-12 w-[90vw] justify-center items-center">
         {videoPortrait.map((video, index) => (
           <div
             key={index}
-            className="relative flex justify-center items-center overflow-hidden w-[20vw] aspect-[9/16] bg-black"
+            className="relative flex justify-center items-center overflow-hidden w-[20vw] aspect-[9/16]"
             onClick={() => handlePlayToggle(index)}
           >
             <ReactPlayer

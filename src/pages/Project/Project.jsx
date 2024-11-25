@@ -7,6 +7,7 @@ import Boards from "../../components/Boards/Boards";
 import CaseVideo from "../../components/CaseVideo/CaseVideo";
 import DemoVideo from "../../components/DemoVideo/DemoVideo";
 import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
+
 const Project = () => {
   const { projectId } = useParams();
   const projectIndex = projectsData.findIndex((p) => p.id === projectId);
@@ -52,10 +53,14 @@ const Project = () => {
           ← Previous project
         </Link>
         <Link
-          to={`/projects/${nextProject.id}`}
+          to={
+            nextProject.id === "about"
+              ? "/about" // Link to `/about` if the next project is "about"
+              : `/projects/${nextProject.id}`
+          }
           className="next-project font-pangram font-normal leading-snug text-lg"
         >
-          Next Project →
+          {nextProject.id === "about" ? "About" : "Next Project"} →
         </Link>
       </div>
     </div>
