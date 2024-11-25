@@ -2,9 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import projectsData from "../../assets/projectsData.json";
 import HeaderProject from "../../components/HeaderProject/HeaderProject";
-import CoverProject from "../../components/CoverProject/CoverProject";
 import Boards from "../../components/Boards/Boards";
-import CaseVideo from "../../components/CaseVideo/CaseVideo";
 import DemoVideo from "../../components/DemoVideo/DemoVideo";
 import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
 
@@ -35,15 +33,11 @@ const Project = () => {
         team={project.team}
         awards={project.awards}
       />
-      {project.coverProject && (
-        <CoverProject coverProject={project.coverProject} />
-      )}
-      {project.caseVideo && <CaseVideo caseVideo={project.caseVideo} />}
+      {project.boards && <Boards boards={project.boards} />}
       {project.videoPortrait && (
         <VideoPortrait videoPortrait={project.videoPortrait} />
       )}
       {project.demoVideo && <DemoVideo demoVideo={project.demoVideo} />}
-      {project.boards && <Boards boards={project.boards} />}
 
       <div className="project-navigation my-8 py-8 px-8 flex justify-between">
         <Link

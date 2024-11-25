@@ -18,7 +18,7 @@ const VideoPortrait = ({ videoPortrait }) => {
   };
 
   return (
-    <div className="w-[92vw] min-h-screen bg-black flex justify-center items-center py-12 mx-auto">
+    <div className="w-[90vw] min-h-screen bg-black flex justify-center items-center py-12 my-4 mx-auto">
       <div className="flex gap-12 w-[90vw] justify-center items-center">
         {videoPortrait.map((video, index) => (
           <div
