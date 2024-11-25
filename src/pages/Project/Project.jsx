@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import projectsData from "../../assets/projectsData.json";
 import HeaderProject from "../../components/HeaderProject/HeaderProject";
 import CoverProject from "../../components/CoverProject/CoverProject";
@@ -9,11 +9,19 @@ import DemoVideo from "../../components/DemoVideo/DemoVideo";
 import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
 const Project = () => {
   const { projectId } = useParams();
-  const project = projectsData.find((p) => p.id === projectId);
+  const projectIndex = projectsData.findIndex((p) => p.id === projectId);
+  const project = projectsData[projectIndex];
 
   if (!project) {
     return <div>Something went wrong</div>;
   }
+  // Calculate previous and next project indices
+  const prevIndex =
+    (projectIndex - 1 + projectsData.length) % projectsData.length;
+  const nextIndex = (projectIndex + 1) % projectsData.length;
+
+  const prevProject = projectsData[prevIndex];
+  const nextProject = projectsData[nextIndex];
 
   return (
     <div className="project-page h-screen">
@@ -35,6 +43,15 @@ const Project = () => {
       )}
       {project.demoVideo && <DemoVideo demoVideo={project.demoVideo} />}
       {project.boards && <Boards boards={project.boards} />}
+
+      <div className="project-navigation mt-8 flex justify-between">
+        <Link to={`/projects/${prevProject.id}`} className="prev-project">
+          ← Previous project
+        </Link>
+        <Link to={`/projects/${nextProject.id}`} className="next-project">
+          Next Project →
+        </Link>
+      </div>
     </div>
   );
 };
