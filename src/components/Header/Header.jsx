@@ -45,7 +45,6 @@ const Header = () => {
             key={index}
             className="relative flex items-center justify-center h-full"
           >
-            {/* Ensure first column has both border-l and border-r */}
             <div
               className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
                 index === 0 ? "border-l border-r" : "border-r"
