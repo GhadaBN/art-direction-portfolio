@@ -3,7 +3,6 @@ import { useParams, Link } from "react-router-dom";
 import projectsData from "../../assets/projectsData.json";
 import HeaderProject from "../../components/HeaderProject/HeaderProject";
 import Boards from "../../components/Boards/Boards";
-import DemoVideo from "../../components/DemoVideo/DemoVideo";
 import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
 
 const Project = () => {
