@@ -1,26 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import projectsData from "../../assets/projectsData.json";
 
 const Header = () => {
-  const [projects, setProjects] = useState([]);
-  const [about, setAbout] = useState(null);
-
-  useEffect(() => {
-    axios
-      .get("/src/assets/projectsData.json")
-      .then((response) => {
-        const filteredProjects = response.data.filter(
-          (project) => project.title !== "About"
-        );
-        const aboutProject = response.data.find(
-          (project) => project.title === "About"
-        );
-        setProjects(filteredProjects);
-        setAbout(aboutProject);
-      })
-      .catch((error) => console.error("Error fetching project data:", error));
-  }, []);
+  const filteredProjects = Array.isArray(projectsData)
+    ? projectsData.filter((project) => project.title !== "About")
+    : [];
+  const aboutProject = Array.isArray(projectsData)
+    ? projectsData.find((project) => project.title === "About")
+    : null;
 
   const getPositionStyles = (title) => {
     if (title === "About") return { marginBottom: "20rem" };
@@ -36,16 +24,15 @@ const Header = () => {
         className="h-full w-full grid"
         style={{
           gridTemplateColumns: `repeat(${
-            projects.length + (about ? 1 : 0) || 1
+            filteredProjects.length + (aboutProject ? 1 : 0) || 1
           }, minmax(0, 1fr))`,
         }}
       >
-        {projects.map((project, index) => (
+        {filteredProjects.map((project, index) => (
           <div
             key={index}
             className="relative flex items-center justify-center h-full"
           >
-            {/* Ensure first column has both border-l and border-r */}
             <div
               className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
                 index === 0 ? "border-l border-r" : "border-r"
@@ -72,31 +59,30 @@ const Header = () => {
           </div>
         ))}
 
-        {about && (
+        {aboutProject && (
           <div
             key="about"
             className="relative flex items-center justify-center h-full"
           >
-            {/* Ensure about section has consistent borders */}
             <div
               className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
-                projects.length === 0 ? "border-l border-r" : "border-r"
+                filteredProjects.length === 0 ? "border-l border-r" : "border-r"
               }`}
             ></div>
 
             <Link
               to="/about"
               className="font-voyage font-400 text-customLg transform -rotate-90 whitespace-nowrap opacity-0 animate-fadeInFromLeft"
-              style={getPositionStyles(about.title)}
+              style={getPositionStyles(aboutProject.title)}
             >
               <div className="flex items-start">
-                <span>{about.title}</span>
-                {about.number && (
+                <span>{aboutProject.title}</span>
+                {aboutProject.number && (
                   <span
                     className="text-customSm ml-2 align-text-top"
                     style={{ verticalAlign: "top", marginTop: "2rem" }}
                   >
-                    {about.number}
+                    {aboutProject.number}
                   </span>
                 )}
               </div>
