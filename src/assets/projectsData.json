@@ -141,7 +141,12 @@
       }
     ],
 
-    "boards": ["/tinder_2.jpg"],
+    "boards": [
+      {
+        "type": "image",
+        "src": "/tinder_2.jpg"
+      }
+    ],
     "demoVideo": ["/tinder_animation.mp4"]
   },
   {
