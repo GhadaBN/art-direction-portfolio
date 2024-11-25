@@ -64,8 +64,9 @@
       "AD: Rachel Fleisher",
       "CW: Smriti Rana"
     ],
-    "coverProject": [{ "type": "image", "src": "/bmw_cover.png" }],
+
     "boards": [
+      { "type": "image", "src": "/bmw_cover.png" },
       { "type": "video", "src": "/bmw_at2_board01.mp4" },
       { "type": "video", "src": "/bmw_at_board02.mp4" }
     ]
