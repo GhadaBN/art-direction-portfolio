@@ -15,7 +15,7 @@ const Project = () => {
   if (!project) {
     return <div>Something went wrong</div>;
   }
-  // Calculate previous and next project indices
+
   const prevIndex =
     (projectIndex - 1 + projectsData.length) % projectsData.length;
   const nextIndex = (projectIndex + 1) % projectsData.length;
@@ -44,11 +44,17 @@ const Project = () => {
       {project.demoVideo && <DemoVideo demoVideo={project.demoVideo} />}
       {project.boards && <Boards boards={project.boards} />}
 
-      <div className="project-navigation mt-8 flex justify-between">
-        <Link to={`/projects/${prevProject.id}`} className="prev-project">
+      <div className="project-navigation my-8 py-8 px-8 flex justify-between">
+        <Link
+          to={`/projects/${prevProject.id}`}
+          className="prev-project font-pangram font-normal leading-snug text-lg"
+        >
           ← Previous project
         </Link>
-        <Link to={`/projects/${nextProject.id}`} className="next-project">
+        <Link
+          to={`/projects/${nextProject.id}`}
+          className="next-project font-pangram font-normal leading-snug text-lg"
+        >
           Next Project →
         </Link>
       </div>

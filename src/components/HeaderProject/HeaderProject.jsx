@@ -12,7 +12,7 @@ const HeaderProject = ({
   return (
     <div className="header-project w-full px-6 pb-[5vh] min-h-[80vh]">
       {type && (
-        <div className="flex justify-start pb-6 px-4">
+        <div className="flex justify-center pb-6 px-4">
           <div className="flex gap-4">
             {type.map((tag, index) => (
               <div

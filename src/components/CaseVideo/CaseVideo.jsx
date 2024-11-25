@@ -1,34 +1,46 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import ReactPlayer from "react-player";
-import { IoIosPlay } from "react-icons/io";
 
 const CaseVideo = ({ caseVideo }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showControls, setShowControls] = useState(false);
+  const videoRef = useRef(null);
 
-  const handlePlay = () => {
-    setIsPlaying(true);
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsPlaying(entry.isIntersecting); 
+      },
+      {
+        threshold: 0.5, 
+      }
+    );
 
-  const handleVideoEnd = () => {
-    setIsPlaying(false);
-  };
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <div className="w-full h-auto flex justify-center items-center my-4">
-      <div
-        className="relative w-4/5 h-full aspect-video rounded-md overflow-hidden"
-        onMouseEnter={() => setShowControls(true)}
-        onMouseLeave={() => setShowControls(false)}
-      >
+    <div
+      ref={videoRef}
+      className="w-full h-auto flex justify-center items-center my-4"
+    >
+      <div className="relative w-[92vw] h-full aspect-video overflow-hidden">
         <ReactPlayer
           url={caseVideo}
           playing={isPlaying}
-          controls={showControls}
+          loop={true}
+          volume={0.2}
+          muted={false}
+          controls={false}
           width="100%"
           height="100%"
-          onPlay={handlePlay}
-          onEnded={handleVideoEnd}
           config={{
             file: {
               attributes: {
@@ -39,14 +51,6 @@ const CaseVideo = ({ caseVideo }) => {
           }}
           className="w-full h-full object-cover transition-opacity duration-300 ease-in-out"
         />
-        {!isPlaying && (
-          <div
-            className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-50 cursor-pointer"
-            onClick={handlePlay}
-          >
-            <IoIosPlay className="text-gray-200 text-[3.5rem]" />
-          </div>
-        )}
       </div>
     </div>
   );

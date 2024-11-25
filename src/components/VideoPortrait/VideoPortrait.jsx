@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import "./VideoPortrait.css";
 import ReactPlayer from "react-player";
 import { IoIosPlay } from "react-icons/io";
 
 const VideoPortrait = ({ videoPortrait }) => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(null);
-  const [showControls, setShowControls] = useState(false);
 
-  const handlePlay = (index) => {
-    setActiveVideoIndex(index);
+  const handlePlayToggle = (index) => {
+    if (activeVideoIndex === index) {
+      setActiveVideoIndex(null);
+    } else {
+      setActiveVideoIndex(index);
+    }
   };
 
   const handleVideoEnd = () => {
@@ -16,22 +18,20 @@ const VideoPortrait = ({ videoPortrait }) => {
   };
 
   return (
-    <div className="section-portrait">
-      <div className="video-portrait-container">
+    <div className="w-full h-[84vh] relative">
+      <div className="flex py-20 gap-12 justify-center items-center">
         {videoPortrait.map((video, index) => (
           <div
             key={index}
-            className="video-portrait-wrapper"
-            onMouseEnter={() => setShowControls(true)}
-            onMouseLeave={() => setShowControls(false)}
+            className="relative flex justify-center items-center overflow-hidden w-[20vw] aspect-[9/16] bg-black"
+            onClick={() => handlePlayToggle(index)}
           >
             <ReactPlayer
               url={video}
               playing={activeVideoIndex === index}
-              controls={showControls}
+              controls={false}
               width="100%"
               height="100%"
-              onPlay={() => handlePlay(index)}
               onEnded={handleVideoEnd}
               config={{
                 file: {
@@ -41,14 +41,12 @@ const VideoPortrait = ({ videoPortrait }) => {
                   },
                 },
               }}
-              className="minimalist-player"
+              className="w-full h-full object-cover"
             />
+
             {activeVideoIndex !== index && (
-              <div
-                className="play-button-overlay"
-                onClick={() => handlePlay(index)}
-              >
-                <IoIosPlay className="play-icon" />
+              <div className="absolute inset-0 flex justify-center items-center bg-black/50 cursor-pointer hover:opacity-80 transition-opacity duration-300 ease-in-out">
+                <IoIosPlay className="text-gray-200 text-[3.5rem]" />
               </div>
             )}
           </div>

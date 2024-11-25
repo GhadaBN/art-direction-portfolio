@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 
 const DemoVideo = ({ demoVideo }) => {
   return (
-    <div className="cover-project-container pt-20 mb-8 mx-auto relative flex justify-center items-center overflow-hidden w-full h-full">
+    <div className="pt-20 mb-8 mx-auto relative flex justify-center items-center overflow-hidden w-full h-full">
       {demoVideo?.map((video, index) => (
         <div key={index} className="cover-item w-[92%] h-auto">
           <ReactPlayer
