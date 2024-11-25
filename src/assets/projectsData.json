@@ -84,12 +84,13 @@
     ],
     "agency": " Attitude Studio Design",
     "client": "Adidas Football",
-    "demoVideo": ["/adidas_video.mp4"],
+
     "boards": [
       {
         "type": "image",
         "src": "/adidas_uniforia_pack.jpg"
       },
+      { "type": "casevideo", "src": "/adidas_video.mp4" },
       { "type": "image", "src": "/adidas_01.png" },
       { "type": "image", "src": "/adidas_02.png" }
     ]
@@ -147,11 +148,14 @@
         "src": "/tinder_1.jpg"
       },
       {
+        "type": "casevideo",
+        "src": "/tinder_animation.mp4"
+      },
+      {
         "type": "image",
         "src": "/tinder_2.jpg"
       }
-    ],
-    "demoVideo": ["/tinder_animation.mp4"]
+    ]
   },
   {
     "id": "bundesliga",
@@ -162,8 +166,8 @@
       "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
     ],
     "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
-    "agency": "Agency: Mediamonks",
-    "client": "Client: Gorillas Delivery",
+    "agency": "Mediamonks",
+    "client": "Bundesliga",
 
     "boards": [
       {
