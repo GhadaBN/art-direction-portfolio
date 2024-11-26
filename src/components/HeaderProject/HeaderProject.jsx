@@ -44,7 +44,6 @@ const HeaderProject = ({
               style={{ marginLeft: "-1vw" }}
             ></div>
 
-            {/* Project Information */}
             <div className="mb-12">
               <h3 className="font-pangram font-medium text-lg">
                 Project Information
