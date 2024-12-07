@@ -48,7 +48,7 @@ const Project = () => {
         <Link
           to={
             nextProject.id === "about"
-              ? "/about" 
+              ? "/about"
               : `/projects/${nextProject.id}`
           }
           className="next-project font-pangram font-normal leading-snug text-lg"

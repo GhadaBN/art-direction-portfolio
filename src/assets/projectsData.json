@@ -171,11 +171,11 @@
     "boards": [
       {
         "type": "image",
-        "src": "/tinder_1.jpg"
+        "src": "/mini_cooper_01.png"
       },
       {
         "type": "casevideo",
-        "src": "/tinder_animation.mp4"
+        "src": "/mini_cooper_video.mp4"
       },
       {
         "type": "image",
