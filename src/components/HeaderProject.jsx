@@ -38,7 +38,6 @@ const HeaderProject = ({
       <div className="flex w-full pr-32 pt-12 my-12">
         {description && (
           <div className="w-[40vw] ml-auto">
-            {/* First Line */}
             <div
               className="mb-12 h-[1px] bg-black w-[41vw]"
               style={{ marginLeft: "-1vw" }}
