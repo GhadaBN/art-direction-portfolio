@@ -37,7 +37,7 @@
         "src": "/rotkohl_cover.png"
       },
       {
-        "type": "casevideo",
+        "type": "video",
         "src": "https://www.dropbox.com/scl/fi/x9kl7xwmyu7qmq1xo8rmo/gorillas_rotkohl.mp4?rlkey=69sjj0l52zkil3fsd7gz63oqq&st=0zd8cnla&raw=1"
       }
     ],
@@ -69,8 +69,8 @@
 
     "boards": [
       { "type": "image", "src": "/bmw_cover.png" },
-      { "type": "video", "src": "/bmw_at2_board01.mp4" },
-      { "type": "video", "src": "/bmw_at_board02.mp4" }
+      { "type": "videoFull", "src": "/bmw_at2_board01.mp4" },
+      { "type": "videoFull", "src": "/bmw_at_board02.mp4" }
     ]
   },
   {
@@ -89,7 +89,7 @@
         "type": "image",
         "src": "/adidas_uniforia_pack.jpg"
       },
-      { "type": "casevideo", "src": "/adidas_video.mp4" },
+      { "type": "video", "src": "/adidas_video.mp4" },
       { "type": "image", "src": "/adidas_01.png" },
       { "type": "image", "src": "/adidas_02.png" }
     ]
@@ -116,7 +116,7 @@
         "src": "/gorillas_eoy_cover.png"
       },
       {
-        "type": "casevideo",
+        "type": "video",
         "src": "/gorillas_eoy_ad.mp4"
       },
       {
@@ -147,7 +147,7 @@
         "src": "/tinder_1.jpg"
       },
       {
-        "type": "casevideo",
+        "type": "video",
         "src": "/tinder_animation.mp4"
       },
       {
@@ -174,7 +174,7 @@
         "src": "/mini_cooper_01.png"
       },
       {
-        "type": "casevideo",
+        "type": "video",
         "src": "/mini_cooper_video.mp4"
       },
       {
