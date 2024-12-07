@@ -76,7 +76,6 @@ const Header = () => {
             key="about"
             className="relative flex items-center justify-center h-full"
           >
-            {/* Ensure about section has consistent borders */}
             <div
               className={`absolute bottom-0 left-0 w-full border-black h-0 origin-bottom animate-growBorder ${
                 projects.length === 0 ? "border-l border-r" : "border-r"
