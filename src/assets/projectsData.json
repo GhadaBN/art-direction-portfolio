@@ -180,33 +180,15 @@
       },
       {
         "type": "image",
-        "src": "/tinder_2.jpg"
-      }
-    ]
-  },
-  {
-    "id": "bundesliga",
-    "title": "Bundesliga",
-    "number": "07",
-    "type": ["Graphic Design", "Art Direction"],
-    "description": [
-      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
-    ],
-    "team": ["ECD: Johannes Hicks", "AD: Ghada Bennasr", "CW: Kevin Chow"],
-    "agency": "Mediamonks",
-    "client": "Bundesliga",
-
-    "boards": [
-      {
-        "type": "image",
-        "src": "/bundesliga_01.png"
+        "src": "/mini_cooper_02.png"
       },
       {
         "type": "image",
-        "src": "/bundesliga_02.png"
+        "src": "/mini_cooper_03.png"
       }
     ]
   },
+
   {
     "id": "about",
     "title": "About",
