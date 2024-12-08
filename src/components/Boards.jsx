@@ -20,7 +20,7 @@ const Boards = ({ boards }) => {
               }
             }
           },
-          { threshold: 0.5 }
+          { threshold: 0.8 }
         );
         observer.observe(videoRef);
         observers.push(observer);
@@ -67,7 +67,7 @@ const Boards = ({ boards }) => {
                   config={{
                     file: {
                       attributes: {
-                        className: "rounded-xl",
+                        className: "rounded-lg",
                       },
                     },
                   }}
