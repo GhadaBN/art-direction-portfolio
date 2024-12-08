@@ -2,9 +2,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="about-page w-full px-6 my-28 py-4 flex justify-center items-start">
+    <div className="about-page w-full px-6 py-12 flex justify-center items-start  bg-customBeige">
       <div className="w-full flex flex-col items-center">
-        <h1 className="font-voyage font-normal text-center leading-none text-customH1">
+        <h1 className="font-voyage font-normal text-center leading-none text-customH1 py-12 mt-6">
           Art Direction & Graphic Design
         </h1>
 

@@ -17,7 +17,7 @@ export default {
         customH1: "14rem",
         customH2: "14.5rem",
         customP: "1rem",
-        customSm: "1.2vw",
+        customSm: "1.2rem",
       },
       colors: {
         customBeige: "#fffaef",
