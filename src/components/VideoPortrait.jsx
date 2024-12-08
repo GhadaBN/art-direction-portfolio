@@ -14,15 +14,13 @@ const VideoPortrait = ({ videoPortrait }) => {
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) {
-            // Only set activeVideoIndex if no video is currently playing
-            if (activeVideoIndex === null) {
-              setActiveVideoIndex(index);
-            }
-          } else {
-            // Pause the video if it scrolls out of view
-            if (activeVideoIndex === index) {
-              setActiveVideoIndex(null);
-            }
+            // Play video when it comes into view
+            setActiveVideoIndex((prevIndex) =>
+              prevIndex === null ? index : prevIndex
+            );
+          } else if (activeVideoIndex === index) {
+            // Stop playing the video when it goes out of view
+            setActiveVideoIndex(null);
           }
         },
         { threshold: 0.5 } // Video must be 50% visible to trigger
@@ -35,18 +33,15 @@ const VideoPortrait = ({ videoPortrait }) => {
     return () => {
       observers.forEach((observer) => observer.disconnect());
     };
-  }, [activeVideoIndex]);
+  }, []); // Empty dependency array ensures this effect runs only once
 
   const handleVideoEnd = () => {
     // Automatically move to the next video when the current one ends
-    if (
-      activeVideoIndex !== null &&
-      activeVideoIndex < videoPortrait.length - 1
-    ) {
-      setActiveVideoIndex(activeVideoIndex + 1);
-    } else {
-      setActiveVideoIndex(null); // Reset to no video if it's the last one
-    }
+    setActiveVideoIndex((prevIndex) =>
+      prevIndex !== null && prevIndex < videoPortrait.length - 1
+        ? prevIndex + 1
+        : null
+    );
   };
 
   return (
@@ -62,7 +57,7 @@ const VideoPortrait = ({ videoPortrait }) => {
               url={video}
               playing={activeVideoIndex === index}
               controls={false}
-              volume={0.2}
+              volume={0.1}
               width="100%"
               height="100%"
               onEnded={handleVideoEnd}
