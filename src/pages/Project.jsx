@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
-import projectsData from "../../assets/projectsData.json";
-import HeaderProject from "../../components/HeaderProject/HeaderProject";
-import Boards from "../../components/Boards/Boards";
-import VideoPortrait from "../../components/VideoPortrait/VideoPortrait";
+import projectsData from "../assets/projectsData.json";
+import HeaderProject from "../components/HeaderProject";
+import Boards from "../components/Boards";
+import VideoPortrait from "../components/VideoPortrait";
 
 const Project = () => {
   const { projectId } = useParams();
