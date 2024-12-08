@@ -28,7 +28,7 @@ const HeaderProject = ({
       )}
 
       {title && (
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center my-16 py-4">
           <h1 className="font-voyage font-normal text-center leading-tight text-customH2 py-8">
             {title}
           </h1>

@@ -24,9 +24,9 @@ const Header = () => {
 
   const getPositionStyles = (title) => {
     if (title === "About") return { marginBottom: "20rem" };
-    if (title === "Gorillas eoy") return { marginBottom: "7rem" };
-    if (title === "Tinder") return { marginBottom: "10rem" };
-    if (title === "Bundesliga") return { marginBottom: "-9rem" };
+    if (title === "Gorillas eoy") return { marginBottom: "6rem" };
+    if (title === "Tinder") return { marginBottom: "-14rem" };
+    if (title === "Mini Cooper") return { marginBottom: "-6rem" };
     return {};
   };
 

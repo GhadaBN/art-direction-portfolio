@@ -48,9 +48,40 @@
     ]
   },
   {
+    "id": "mini-cooper",
+    "title": "Mini Cooper",
+    "number": "02",
+    "type": ["Graphic Design", "Art Direction"],
+    "description": [
+      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
+    ],
+    "team": ["CD: Caroline Michaelis", "AD: Ghada Bennasr"],
+    "agency": "Mediamonks",
+    "client": "Mini Cooper",
+
+    "boards": [
+      {
+        "type": "image",
+        "src": "/mini_cooper_01.png"
+      },
+      {
+        "type": "video",
+        "src": "/mini_cooper_video.mp4"
+      },
+      {
+        "type": "image",
+        "src": "/mini_cooper_02.png"
+      },
+      {
+        "type": "image",
+        "src": "/mini_cooper_03.png"
+      }
+    ]
+  },
+  {
     "id": "bmw",
     "title": "BMW",
-    "number": "02",
+    "number": "03",
     "type": ["Art Direction"],
     "agency": "Mediamonks Global, Mediamonks France",
     "description": [
@@ -77,7 +108,7 @@
   {
     "id": "adidas",
     "title": "Adidas Uniforia",
-    "number": "03",
+    "number": "04",
     "type": ["Graphic Design"],
     "description": [
       "The Adidas Uniforia Pack SS20 project developed a visual language inspired by the principles of arts and crafts. The collection’s unique design elements featured handcrafted paint strokes, digitized through a blend of analogue and digital techniques, reflecting the raw, imperfect beauty found in both sports and art. The retail concept was transformed into a flexible global toolkit catering different global market realities. From small scale to flagship executions."
@@ -98,7 +129,7 @@
   {
     "id": "gorillas-eoy",
     "title": "Gorillas eoy",
-    "number": "04",
+    "number": "05",
     "type": ["Graphic Design", "Art Direction"],
     "description": [
       "Winter 2021, grocery delivery in minutes became the new thing. And since everyone had the same exact focus, Gorillas needed to stand out by focusing on something else: empathy. This story was told across all channels and touch points. Using real human insights, that spoke to all of our target groups, no matter where they were celebrating the holidays."
@@ -130,7 +161,7 @@
   {
     "id": "tinder",
     "title": "Tinder",
-    "number": "05",
+    "number": "06",
     "type": ["Student Work", "Graphic Design", "Art Direction"],
     "role": "Role: Concept, Artwork",
     "team": [
@@ -154,37 +185,6 @@
       {
         "type": "image",
         "src": "/tinder_2.jpg"
-      }
-    ]
-  },
-  {
-    "id": "mini-cooper",
-    "title": "Mini Cooper",
-    "number": "06",
-    "type": ["Graphic Design", "Art Direction"],
-    "description": [
-      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
-    ],
-    "team": ["CD: Caroline Michaelis", "AD: Ghada Bennasr"],
-    "agency": "Mediamonks",
-    "client": "Mini Cooper",
-
-    "boards": [
-      {
-        "type": "image",
-        "src": "/mini_cooper_01.png"
-      },
-      {
-        "type": "video",
-        "src": "/mini_cooper_video.mp4"
-      },
-      {
-        "type": "image",
-        "src": "/mini_cooper_02.png"
-      },
-      {
-        "type": "image",
-        "src": "/mini_cooper_03.png"
       }
     ]
   },
