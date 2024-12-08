@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import ReactPlayer from "react-player";
-import { IoIosPlay } from "react-icons/io";
 
 const VideoPortrait = ({ videoPortrait }) => {
   const [activeVideoIndex, setActiveVideoIndex] = useState(null); // Start with no active video
