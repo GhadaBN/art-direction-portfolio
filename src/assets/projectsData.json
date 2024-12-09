@@ -55,10 +55,16 @@
     "hover": "/mini_hover.jpg",
     "type": ["Graphic Design", "Art Direction"],
     "description": [
-      "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
+      "Renowned for its adventurous spirit and bold design, MINI Cooper embarked on a new journey with the launch of MINI Electric. This campaign brought the energy and innovation of the electric range to life across social media, digital platforms, and after-sales experiences."
     ],
-    "team": ["CD: Caroline Michaelis", "AD: Ghada Bennasr"],
-    "agency": "Mediamonks",
+    "team": [
+      "ECD: Johannes Hicks",
+      "CD: Caroline Michaelis",
+      "PM: Anja Plank",
+      "PM: Lena Ebling",
+      "AD: Ghada Bennasr"
+    ],
+    "agency": "Mediamonks + Anomaly (concept)",
     "client": "Mini Cooper",
 
     "boards": [
