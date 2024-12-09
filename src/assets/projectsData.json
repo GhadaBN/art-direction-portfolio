@@ -3,6 +3,7 @@
     "id": "gorillas-red-cabbage",
     "title": "Gorillas Rotkohl",
     "number": "01",
+    "hover": "/gorillas_rotkohl_hover.jpg",
     "type": ["Art Direction"],
     "description": [
       "Grocery delivery services are booming and they all only talk about one thing: speed. With a different approach, a very slow one, Gorillas serves up an arthouse short film called Red Cabbage on YouTube that is about as long as the Gorillas delivery time: 8 minutes."
@@ -51,6 +52,7 @@
     "id": "mini-cooper",
     "title": "Mini Cooper",
     "number": "02",
+    "hover": "/mini_hover.jpg",
     "type": ["Graphic Design", "Art Direction"],
     "description": [
       "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
@@ -82,6 +84,7 @@
     "id": "bmw",
     "title": "BMW",
     "number": "03",
+    "hover": "/mini_hover.jpg",
     "type": ["Art Direction"],
     "agency": "Mediamonks Global, Mediamonks France",
     "description": [
@@ -108,6 +111,7 @@
     "id": "adidas",
     "title": "Adidas Uniforia",
     "number": "04",
+    "hover": "/mini_hover.jpg",
     "type": ["Graphic Design"],
     "description": [
       "The Adidas Uniforia Pack SS20 project developed a visual language inspired by the principles of arts and crafts. The collection’s unique design elements featured handcrafted paint strokes, digitized through a blend of analogue and digital techniques, reflecting the raw, imperfect beauty found in both sports and art. The retail concept was transformed into a flexible global toolkit catering different global market realities. From small scale to flagship executions."
@@ -129,6 +133,7 @@
     "id": "gorillas-eoy",
     "title": "Gorillas eoy",
     "number": "05",
+    "hover": "/mini_hover.jpg",
     "type": ["Graphic Design", "Art Direction"],
     "description": [
       "Winter 2021, grocery delivery in minutes became the new thing. And since everyone had the same exact focus, Gorillas needed to stand out by focusing on something else: empathy. This story was told across all channels and touch points. Using real human insights, that spoke to all of our target groups, no matter where they were celebrating the holidays."
@@ -161,6 +166,7 @@
     "id": "tinder",
     "title": "Tinder",
     "number": "06",
+    "hover": "/tinder_hover.jpg",
     "type": ["Student Work", "Graphic Design", "Art Direction"],
     "role": "Role: Concept, Artwork",
     "team": [
@@ -191,6 +197,7 @@
   {
     "id": "about",
     "title": "About",
+    "hover": "/mini_hover.jpg",
     "number": "07",
     "description": [
       "At the top of the German football league, the Bundesliga is Germany's primary football competition. For its season finale, we were in charge of making a design toolkit, to be used across Bundesliga digital media and Tv channels."
